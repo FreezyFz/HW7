@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web</title>
+    <link rel="stylesheet" type="text/css" href="public/web_style.css"/>
+  </head>
+
+  <body>
+    <div class = "menu">
+      <h1>Legend Michael</h1>
+      <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="#">SONGS</a></li>
+        <li><a href="#">PHOTO</a></li>
+        <li><a href="page2">FORM</a></li>
+      </ul>
+    </div>
+
+    <div class="contain">
+
+      <div class="main">
+      </br>
+        <h1>Data Stored</h1>
+		    <% if (userinfos.length) { %>
+		      <ul>
+            <% userinfos.forEach(function(userinfo){ %>
+              <li>名字: <%= userinfo['name'] %> 年齡: <%= userinfo['age'] %> 性別: <%= userinfo['sex'] %></li>
+            <% }) %>
+          </ul>
+		    <% } %>
+      </div>
+
+      <div class="album">
+        <table>
+          <tr>
+            <th><p>Name</p></th>
+            <th><p>Year</p></th>
+            <th><p>Album</p></th>
+          </tr>
+          <tr>
+            <td><p>off the world</p></td>
+            <td><p>1979</p></td>
+            <td><img src="public/off_the_world.jpg"</td>
+          </tr>
+          <tr>
+            <td><p>bad</p></td>
+            <td><p>1987</p></td>
+            <td><img src="public/bad.png"</td>
+          </tr>
+          <tr>
+            <td><p>dangerous</p></td>
+            <td><p>1991</p></td>
+            <td><img src="public/dangerous.jpg"</td>
+          </tr>
+          <tr>
+            <td><p>thriller</p></td>
+            <td><p>1982</p></td>
+            <td><img src="public/thriller.png"</td>
+          </tr>
+          <tr>
+            <td><p>history</p></td>
+            <td><p>1995</p></td>
+            <td><img src="public/history.jpg"</td>
+          </tr>
+          <tr>
+            <td><p>xscape</p></td>
+            <td><p>2014</p></td>
+            <td><img src="public/xscape.jpg"</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  <div class="footer">
+  </div>
+
+  </body>
+
+</html>
